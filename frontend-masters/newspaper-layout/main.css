@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.title {
+    text-align: center;
+}
+
+.nav-bar {
+    border: 3px solid black;
+}
+
 .nav-bar ul {
     display: flex;
     list-style: none;
@@ -22,3 +30,33 @@
     text-decoration: underline;
 }
 
+.c1 {
+    display: grid;
+    grid-template-areas: 
+    "article1 article2 article3"
+    "article4 article5 article5";
+}
+
+.article {
+    border: 3px solid black;
+}
+
+.a1 {
+    grid-area: "article1";
+}
+
+.a2 {
+    grid-area: "article2";
+}
+
+.a3 {
+    grid-area: "article3";
+}
+
+.a4 {
+    grid-area: "article4";
+}
+
+.a5 {
+    grid-area: "article5";
+}
