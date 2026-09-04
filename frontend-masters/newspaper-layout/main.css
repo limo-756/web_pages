@@ -19,6 +19,8 @@
     width: 100%;
     flex-direction: row;
     padding: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .nav-bar ul li a {
@@ -35,28 +37,48 @@
     grid-template-areas: 
     "article1 article2 article3"
     "article4 article5 article5";
-}
-
-.article {
+    /* gap: 3px; */
+    row-gap: 3px;
+    column-gap: 2px;
+    background-color: black;
     border: 3px solid black;
 }
 
+.c1:nth-child(-n+3) {
+    border-top: none;
+}
+
+.article {
+    padding: 5px;
+    background-color: white;
+}
+
+.article h2 {
+    text-align: center;
+}
+
+.article img {
+    align-content: center;
+    /* width: 100%; */
+}
+
 .a1 {
-    grid-area: "article1";
+    grid-area: article1;
 }
 
 .a2 {
-    grid-area: "article2";
+    grid-area: article2;
+    text-align: center;
 }
 
 .a3 {
-    grid-area: "article3";
+    grid-area: article3;
 }
 
 .a4 {
-    grid-area: "article4";
+    grid-area: article4;
 }
 
 .a5 {
-    grid-area: "article5";
+    grid-area: article5;
 }
